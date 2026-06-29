@@ -1,0 +1,240 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Constants */
+:root {
+  --primary-blue: #002255;
+  --secondary-blue: #003377;
+  --light-blue: #0066cc;
+  --text-dark: #001f4d;
+  --border-color: #d1daf0;
+}
+
+/* Main Header */
+.main-header {
+  background-color: var(--primary-blue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-placeholder {
+  font-size: 2.2rem;
+  opacity: 0.9;
+}
+
+.title-text h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.title-text p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.admin-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.admin-login i {
+  font-size: 1.6rem;
+}
+
+/* Sub Navigation */
+.sub-nav {
+  background-color: var(--secondary-blue);
+  display: flex;
+  border-bottom: 2px solid #001a3e;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* App Layout Grid */
+.app-container {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 240px;
+  background-color: #fcfdfe;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  color: #445577;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: 1px solid #edf2f9;
+  transition: all 0.2s;
+}
+
+.sidebar-item i {
+  font-size: 1.3rem;
+  width: 25px;
+  text-align: center;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+  background-color: #f0f5ff;
+  color: var(--secondary-blue);
+}
+
+.sidebar-item.active {
+  border-left: 4px solid var(--light-blue);
+  padding-left: 16px; /* Balance out the border-left */
+}
+
+/* Main Content Panel */
+.main-content {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Welcome Typography Block */
+.welcome-box {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.decorative-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.decorative-top .line {
+  height: 1px;
+  background-color: #b0c4de;
+  width: 80px;
+}
+
+.wing-icon {
+  color: #778899;
+  font-size: 1.2rem;
+}
+
+.welcome-title {
+  font-size: 4rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.welcome-subtitle {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.dept-title {
+  font-size: 3.2rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.decorative-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.blue-line {
+  height: 2px;
+  background-color: var(--light-blue);
+  width: 120px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--light-blue);
+  border-radius: 50%;
+}
+
+/* Footer styling */
+.main-footer {
+  background-color: var(--primary-blue);
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
